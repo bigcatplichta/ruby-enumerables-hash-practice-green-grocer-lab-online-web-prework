@@ -5,7 +5,7 @@ def consolidate_cart(cart)
       item_name = item.keys
       attributes = item.values
         if final_cart[item_name]
-          final_cart[item_name][:count] += 1
+          item_name[:count] += 1
         else 
           final_cart[item_name] = attributes
           final_cart[:count] = 1
