@@ -2,9 +2,9 @@ def consolidate_cart(cart)
   final_cart = {}
   
   cart.each do |item|
+      item_name = item.key
       
-      final_cart = item(0)
-      final_cart[item][:count] = 1
+      final_cart[][:count] = 1
   end 
   final_cart 
 end
