@@ -3,10 +3,10 @@ def consolidate_cart(cart)
   
   cart.each do |item|
       item_name = item.keys
-        if final_cart
+        if final_cart[item_name]
           final_cart[item_name][:count] = 1
         else 
-          
+          final_cart = 
   end 
   final_cart 
 end
