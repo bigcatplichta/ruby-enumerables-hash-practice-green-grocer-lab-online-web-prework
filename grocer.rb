@@ -7,8 +7,12 @@ def consolidate_cart(cart)
         if final_cart[item_name]
           item_name[:count] += 1
         else 
-          final_cart[item_name] = attributes
-          final_cart[:count] = 1
+          final_cart[item_name] = {
+            count: 1 
+            price: attributes[:price]
+            clearance: attributes[:clearance]
+          }
+          
         end 
   end 
   final_cart 
