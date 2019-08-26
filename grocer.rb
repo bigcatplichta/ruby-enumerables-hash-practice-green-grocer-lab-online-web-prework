@@ -34,7 +34,9 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  
+  cart.collect do |name, attributes|
+    
+  end 
 end
 
 def checkout(cart, coupons)
