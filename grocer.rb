@@ -2,8 +2,8 @@ def consolidate_cart(cart)
   final_cart = {}
   
   cart.each do |item|
-      item_name = item.keys
-      attributes = item.values
+      item_name = item.keys[0]
+      attributes = item.values[0]
         if final_cart[item_name]
           final_cart[item_name][:count] += 1
         else 
