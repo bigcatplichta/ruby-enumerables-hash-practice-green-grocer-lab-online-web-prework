@@ -45,7 +45,7 @@ def checkout(cart, coupons)
   con_cart = consolidate_cart(cart)
   w_coupons = apply_coupons(con_cart, coupons)
   w_clearance = apply_clearance(w_coupons)
-  total = w_clearance.reduce { |acc, (key, value)| acc += value[:price] * value[:count]}
+  total = w_clearance.reduce(0) { |acc, (key, value)| acc += value[:price] * value[:count]}
   
   total > 100 ? total * 0.9 : total  
   
