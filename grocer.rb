@@ -19,7 +19,10 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  # code here
+  coupon_hash = {} 
+  
+  if :count >= :num 
+  #   
 end
 
 def apply_clearance(cart)
