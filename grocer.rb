@@ -34,7 +34,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  cart.collect do |name, attributes|
+  cart.each do |name, attributes|
     if attributes[:clearance]
       attributes[:price] -= attributes[:price] * 0.2
     end   
