@@ -20,7 +20,7 @@ end
 
 def apply_coupons(cart, coupons)
   
-  cart.collect do |item, attribute|
+  cart.each do |item, attribute|
   
   
   if cart:count >= :num 
