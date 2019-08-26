@@ -19,9 +19,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  coupon_hash = {} 
   
-  if :count >= :num 
+  cart.collect do |item|
+  item = 
+  
+  if cart:count >= :num 
   #   
 end
 
