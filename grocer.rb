@@ -1,3 +1,5 @@
+require pry 
+
 def consolidate_cart(cart)
   final_cart = {}
   
@@ -19,12 +21,8 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  
-  cart.each do |item, attribute|
-  
-  
-  if cart:count >= :num 
-  #   
+  binding.pry
+ 
 end
 
 def apply_clearance(cart)
