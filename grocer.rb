@@ -1,9 +1,9 @@
 def consolidate_cart(cart)
   final_cart = {}
   
-  cart.collect do |item|
+  cart.each do |item|
       item[:count] = 1
-    final_cart = final_cart[item]  
+      final_cart = final_cart[item]  
   end 
   return final_cart 
 end
