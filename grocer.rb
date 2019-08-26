@@ -1,5 +1,11 @@
 def consolidate_cart(cart)
-  # code here
+  final_cart = {}
+  
+  cart.collect do |item|
+      item[:count] = 1
+    final_cart = final_cart[item]  
+  end 
+  return final_cart 
 end
 
 def apply_coupons(cart, coupons)
